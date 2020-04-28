@@ -3,6 +3,7 @@ class handles {
         this.game = game ;
         this.checks = [];
         this.listenKeyBoard();
+        this.request();
         this.checked();
     }
     checked(){
@@ -14,11 +15,11 @@ class handles {
 		document.addEventListener('keydown', (event) => {
 			console.log(event.code);
 			switch (event.code) {
-                case 'Space':
-                    this.game.car.start = true;
+                /*case 'Space':
+                    this.game.car.start = true;*/
 				case 'Digit1':
                     if(this.game.car.x == this.game.array.stations[0].x){
-                        //console.log('aaa');
+                        console.log('aaa');
                     
                         this.checks[0] = true;
                         SPEED = 1;
@@ -59,12 +60,38 @@ class handles {
 			}
 		});
     }
+    request(){
+        
+    }
     update(){
-       if(this.game.car.x == this.game.array.stations[5].x){
-           this.game.canvas.style.display = 'none';
+       /*if(this.game.car.x == this.game.array.stations[5].x){
+           //this.game.canvas.style.display = 'none';
            console.log('asc');
-       }
-       //this.game.canvas.style.display = 'block';
+           document.getElementById('play').style.display = 'block';
+       }*/
+       if(this.game.car.x==150) {
+        document.getElementById('sound1').style.display = 'block';
+        }
+        else document.getElementById('sound1').style.display = 'none';
+       
+        if(this.game.car.x==250) {
+            document.getElementById('sound2').style.display = 'block';
+            }
+            else document.getElementById('sound2').style.display = 'none';
+
+         if(this.game.car.x==350) {
+             document.getElementById('sound3').style.display = 'block';
+                }
+         else document.getElementById('sound3').style.display = 'none';
+
+         if(this.game.car.x==450) {
+            document.getElementById('sound4').style.display = 'block';
+            }
+            else document.getElementById('sound4').style.display = 'none';      
+         if(this.game.car.x==550) {
+            document.getElementById('sound5').style.display = 'block';
+                }
+            else document.getElementById('sound5').style.display = 'none'; 
     }
     draw(){
         for(let i = 0; i<5; i++){
