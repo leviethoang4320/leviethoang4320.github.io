@@ -27,8 +27,6 @@ class handles {
 			}
 		});
     }
-    request(){
-        
    
     update(){
        /*if(this.game.car.x == this.game.array.stations[5].x){
