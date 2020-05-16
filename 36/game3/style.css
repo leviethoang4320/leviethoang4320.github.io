@@ -1,7 +1,8 @@
 
+*{margin:0;padding:0}
+
 body {
-	background: url(images/bg.png) no-repeat center top;
-	margin-left: 0px;
+	background: url(images/bg.png) no-repeat ;
 }
 
 
@@ -97,9 +98,10 @@ body {
 	background: url(images/bgl.png);
 	height: 660px;
 	width: 196px;
-	margin-top: -8px;
-	margin-left: 0.5px;
+	top: 0px;
+	left: 0px;
 	position: absolute;
+	
 }
 #track{
 	position: absolute;
@@ -162,7 +164,7 @@ body {
 }
 #playgr{
 	position: absolute;
-	left: 197px;
+	left: 195px;
 	top: 70px;
 }
 #play{
