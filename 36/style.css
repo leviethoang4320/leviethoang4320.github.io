@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.menu {
+    list-style-type: none;
+    
+	margin-left: 10px;
+	padding: 0;
+	display: flex;
+	margin-top:20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.menu ul img {
+    height: 236px;
+    width: 178px;
+    
+    
+    
+}

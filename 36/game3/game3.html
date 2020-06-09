@@ -9,6 +9,7 @@
       </style>
    </head>
    <body>
+     
       <img id = "back" src="images/back.png" onclick="Back()" alt="">
       <img id = "sound" onclick="Sound()" src="images/sound.png" >
       <div id = "level">
@@ -34,7 +35,7 @@
          <img id = "note5" src="images/trackNote.png" alt="">
       </div>
  
-      <!-- Drop Target 1 -->
+     
     
       
  
@@ -119,7 +120,7 @@
                ondragstart="dragstartHandler(event)"
                
                draggable="true"
-               ondrag="dragHandler(event)">
+               ondrag="dragHandler(event,this)">
                
  
  
